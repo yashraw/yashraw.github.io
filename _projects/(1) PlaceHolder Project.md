@@ -4,7 +4,7 @@ tools: [SolidWorks, ArduinoIDE, Designing]
 image: https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80
 description: Recycling of Plastics Using Affordable Injection Moulding Machine
 #external_url: https://www.google.com
-title: Some title
+permalink: "/gradproject1"
 ---
 
 
