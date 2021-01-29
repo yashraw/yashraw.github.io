@@ -1,6 +1,6 @@
 ---
 title: Life's Not Great; And it shouldn't be either
-tags: life, self-help
+tags: life self-help
 style: fill
 color: light
 description: About dealing with feelings.
