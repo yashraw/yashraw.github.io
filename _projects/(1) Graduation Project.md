@@ -76,4 +76,4 @@ manufactured mould.
 
 This machine being **very affordable** gives a chance to small business owners as well as established workshop to implement the idea of recycling plastics and reduce the wastage. This will not only **reduce the wastage** caused by improper disposing of plastic materials and helps in **reducing the pollution**. It's **low maintenance** and is easy to repair and replace if anything goes wrong. The product itself is made out of  household and easily available parts so it’s not hard to build your own machine.
 
-The .iges file can be found [here.](https://drive.google.com/file/d/1gruXpl3QTFOZgCFDQEDkuUstFQxakams/view?usp=sharing)
+The 3D MODEL(.iges) file can be found [here.](https://drive.google.com/file/d/1gruXpl3QTFOZgCFDQEDkuUstFQxakams/view?usp=sharing)
