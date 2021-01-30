@@ -1,5 +1,5 @@
-<div class="col mt-4">
-  <div class="timeline-body">
+<div class="col-lg">
+  <div>
     {% for item in site.data.timeline %}
       <div class="timeline-item">
         <div class="content">
@@ -8,6 +8,7 @@
           <p>{{ item.description }}</p>
         </div>
       </div>
+      <hr>
     {% endfor %}
   </div>
 </div>

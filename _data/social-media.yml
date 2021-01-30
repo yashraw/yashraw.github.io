@@ -16,6 +16,7 @@ email:
   icon  : fas fa-envelope
   color : db4437
 
+
 facebook:
   url   : https://www.facebook.com/
   icon  : fab fa-facebook
@@ -25,7 +26,6 @@ github:
   url   : https://www.github.com/
   icon  : fab fa-github
   color : 333333
-
 gitlab:
   url   : https://www.gitlab.com/
   icon  : fab fa-gitlab
