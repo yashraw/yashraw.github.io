@@ -8,7 +8,7 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-Technology enthusiast Mechanical Engineer Graduate who is in love with Designing, Rendering and Photography. Experienced in various 3D programs like SolidWorks and Blender. Currently taking a break to persue further studies in design/industrial engineering related field.
+Technology enthusiast Mechanical Engineer Graduate who is in love with Designing, Rendering and Photography. Experienced in various 3D programs like SolidWorks and Blender.I am keen to learn directly from seasoned industry professionals and currently taking a break to persue further studies in design/industrial engineering related field.
 
 ***
 
