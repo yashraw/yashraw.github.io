@@ -1,0 +1,8 @@
+<figure class="figure w-50">
+  <span class="align-middle">middle
+    <img src="{{ include.image }}" class="rounded mx-auto d-block" alt="{{ include.alt | default: include.caption }}">
+    {%- if include.caption -%}
+      <figcaption class="figure-caption text-center">{{ include.caption }}</figcaption>
+    {%- endif -%}
+  </span>
+</figure>
