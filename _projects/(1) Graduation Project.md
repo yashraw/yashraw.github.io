@@ -1,6 +1,6 @@
 ---
 name: Graduation Project-1
-tools: [SolidWorks, ArduinoIDE, Designing]
+tools: [SolidWorks, ArduinoIDE, Designing, Automation]
 image: https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80
 description: Recycling of Plastics Using Affordable Injection Moulding Machine
 #external_url: https://www.google.com
@@ -32,7 +32,7 @@ We got most of the parts from there at reasonable cost, around Rs.55 per Kg. Res
 
 Now the whole heating element was controlled by the Arduino microcontroller, basically a desired and known melting temperature of the material to be inserted was inputted in the code and with the help of relay arrangement, the heating of the barrel was controlled, We only controlled the exit nozzle temperature and this can be improved by controlling the melting temperature first and increasing temperature right before ejecting out the nozzle to maintain optimal fluidity, but it was left aside for another revision.
 {% include elements/figure.html image="\assets\img\1-4.png" caption="Schematics"  %}
-The exact code used for this project can be found [here.](https://github.com/yashraw/InjectionMould) <br>
+The exact code used for this project can be found [here.](https://github.com/yashraw/Codes/blob/main/Injection%20Moulding.ino) <br>
 
 <p>&nbsp;</p>
 #### Working
