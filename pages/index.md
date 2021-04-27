@@ -24,11 +24,11 @@ permalink: /
 </style>
 
 
-#### Welcome to my internet home. I'm a Mechanical Engineer, passionate about technology, and likes to capture the world.
+#### Welcome to my internet home. I'm a Mechanical Engineer, passionate about technology and someone who tries to capture the world in a frame :camera:.
 
 <br>
 
-#### I created this site using [GH-Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/docs/github-pages/) to build my online presence. Here, I showcase my projects, blogs and various things in a more thorough form.
+#### I created this site using [GH-Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/docs/github-pages/) as an extension to my resume and to build my online presence. Here, I showcase my projects, blogs and various things in a more thorough form.
 
 <br>
 
@@ -36,7 +36,7 @@ permalink: /
 
 <br>
 
-#### Check out my [about page.](./about/) to know more about me.
+#### Check out my [about page](./about/) to know more about me.
 
 <br>
 
