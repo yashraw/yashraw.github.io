@@ -24,7 +24,7 @@ permalink: /
 </style>
 
 
-#### Welcome to my internet home. I'm a Mechanical Engineer, passionate about technology and someone who tries to capture the world in a frame :camera:.
+#### Welcome to my internet home. I'm a Mechanical Engineer, passionate about technology, and someone who tries to capture the world in a frame :camera:.
 
 <br>
 
