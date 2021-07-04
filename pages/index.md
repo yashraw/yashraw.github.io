@@ -24,7 +24,11 @@ permalink: /
 </style>
 
 
-#### Welcome to my internet home. I'm a Mechanical Engineer, passionate about technology, and someone who tries to capture the world in a frame :camera:.
+#### Welcome to my internet home. I'm a Mechanical Engineer, passionate about technology, and someone who tries to capture the world in a frame :camera:. 
+
+<br>
+
+#### Currently enrolled in [CS50](https://cs50.harvard.edu/x/2021/) — an online introductory course on Computer Science taught at Harvard University by [David J. Malan](https://cs.harvard.edu/malan/)
 
 <br>
 
