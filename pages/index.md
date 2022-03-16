@@ -36,7 +36,7 @@ permalink: /
 
 <br>
 
-#### I recently decided to pursue Advanced diploma in Industrial Engineering after working for over 10 months in a Pharma Equipment Manufacturing company as a Design Engineer. My goal now is to learn how to build machines and manage industry in an efficient way.
+#### Currently enrolled in Mechanical Engineering Technology - Industrial from [Centennial College](https://www.centennialcollege.ca/) after working for over 10 months in a Pharma Equipment Manufacturing company as a Jr. Design Engineer. My goal now is to learn how to build machines and manage industry in an efficient way. 
 
 <br>
 
