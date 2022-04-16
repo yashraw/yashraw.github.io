@@ -1,5 +1,5 @@
 ---
-name: Graduation Project 2
+name: Project 2
 tools: [ArduinoIDE, Automation]
 image: https://images.unsplash.com/photo-1565451451500-4fa5c8c3f456?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=817&q=80
 description: Remote Accessed Irrigation System

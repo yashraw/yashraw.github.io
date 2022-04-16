@@ -28,7 +28,8 @@ permalink: /
 
 <br>
 
-#### Currently enrolled in [CS50](https://cs50.harvard.edu/x/2021/) — an online introductory course on Computer Science taught at Harvard University by [David J. Malan](https://cs.harvard.edu/malan/)
+#### Currently enrolled in Mechanical Engineering Technology - Industrial from [Centennial College](https://www.centennialcollege.ca/) after working for over 10 months in a Pharma Equipment Manufacturing company as a Jr. Design Engineer. My goal now is to learn how to build machines and manage industry in an efficient way. 
+
 
 <br>
 
@@ -36,7 +37,7 @@ permalink: /
 
 <br>
 
-#### Currently enrolled in Mechanical Engineering Technology - Industrial from [Centennial College](https://www.centennialcollege.ca/) after working for over 10 months in a Pharma Equipment Manufacturing company as a Jr. Design Engineer. My goal now is to learn how to build machines and manage industry in an efficient way. 
+#### Also enrolled in [CS50](https://cs50.harvard.edu/x/2021/) — an online introductory course on Computer Science taught at Harvard University by [David J. Malan](https://cs.harvard.edu/malan/)
 
 <br>
 
