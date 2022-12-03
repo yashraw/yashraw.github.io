@@ -28,7 +28,7 @@ permalink: /
 
 <br>
 
-#### Currently enrolled in Mechanical Engineering Technology - Industrial from [Centennial College](https://www.centennialcollege.ca/) after working for over 10 months in a Pharma Equipment Manufacturing company as a Jr. Design Engineer. My goal now is to learn how to build machines and manage industry in an efficient way. 
+#### Currently enrolled in Mechanical Engineering Technology - Industrial from [Centennial College](https://www.centennialcollege.ca/) and a student researcher and mechanical designer working part-time at [WIMTACH](https://wimtach.centennialcollege.ca/about/). I moved to Canada after working as a Jr. Design Engineer for a Pharma Equipment Manufacturing firm for almost a year. My goal now is to learn how to build machines and manage industry in an efficient way. I am employed Part Time 
 
 
 <br>
