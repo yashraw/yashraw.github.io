@@ -14,16 +14,23 @@ Technology enthusiast Mechanical Engineer Graduate who is in love with Designing
 
 ***
 
-## Designing Skills
--   SolidWorks - CSWA
+## CAD Packages
+-   SolidWorks - CSWP
 -   SolidEdge
 -   AutoCAD Drafting
 -   Blender
+-   MasterCAM
+-   Draftsight
 
+## 3D Modelling and Simulation
+-   FEA analysis using Ansys and SolidWorks Simulation.
+-   General Arrangement Drawing (GA Drawing) and Pneumatic and Instrumentation Drawing (P&ID).
+-   Experience with design for manufacturing and assembly (DFMA) principles.
+-   GD&T, Knowledge of materials science and selection.
 
-## Skills: 
+## Soft Skills and Other Skills: 
 -  Programming and Database Languages (C, C++, Python, Arduino IDE, SQL) 
--  Design for Manufacturing / Design for Assembly with GD&T
+-  Knowledge of BIS, ASME, ISO Standards.
 -  Value Engineering / Cost Analysis
 -  Proficient in  Microsoft Office Suit
 -  Windows, Linux 
@@ -33,6 +40,13 @@ Technology enthusiast Mechanical Engineer Graduate who is in love with Designing
 <div class="row">
 {% include about/timeline.html %}
 </div>
+
+## Training and Certifications
+-  CSWP - Certified SolidWorks Professional - Weldments - Sheet Metal - Dassault Systèmes <br>
+-  Additive Manufacturing for Business - LinkedIn Learning <br>
+-  SolidWorks - Simulation for Finite Element Analysis - LinkedIn Learning <br>
+-  Introduction to Programming using Python (Automate the Boring Stuff with Python) - Udemy <br>
+-  The Fundamentals of Digital Marketing - Google Digital Unlocked <br>
 
 
 ## Hobbies:

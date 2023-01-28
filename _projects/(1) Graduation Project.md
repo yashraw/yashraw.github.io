@@ -24,14 +24,14 @@ We made an affordable Injection Moulding machine which will take recyclable plas
 - This machine can be an excellent part in the “SWACCH BHARAT” initiative taken by out PMO India, as it will reduce the plastic waste generated
 
 The project started by a quick handrawn sketch followed by a quick CAD model in SolidWorks.  
-{% include elements/figure.html image="\assets\img\1-1.png" caption="First Sketch" %}
+{% include elements/figure.html image="/assets/img/1-2.png" caption="First Sketch" %}
 Now we didn't made the entire machine exactly as the cad file because The plan was to built  with scrap parts, therefore we headed towards local scarpyards for scouting junk that would be usefull to us.
 We got most of the parts from there at reasonable cost, around Rs.55 per Kg. Rest of the materials were purchased new and some components like Band Heaters and Thermocouple were also purchased new.
-{% include elements/figure.html image="\assets\img\1-2.png"  %}
+{% include elements/figure.html image="/assets/img/1-2.png"  %}
 
 
 Now the whole heating element was controlled by the Arduino microcontroller, basically a desired and known melting temperature of the material to be inserted was inputted in the code and with the help of relay arrangement, the heating of the barrel was controlled, We only controlled the exit nozzle temperature and this can be improved by controlling the melting temperature first and increasing temperature right before ejecting out the nozzle to maintain optimal fluidity, but it was left aside for another revision.
-{% include elements/figure.html image="\assets\img\1-4.png" caption="Schematics"  %}
+{% include elements/figure.html image="/assets/img/1-4.png" caption="Schematics"  %}
 The exact code used for this project can be found [here.](https://github.com/yashraw/Codes/blob/main/Injection%20Moulding.ino) <br>
 
 <p>&nbsp;</p>
@@ -43,7 +43,7 @@ The product formed may or may not require further machining depending upon the t
 
 
 Below is the result of the first mould created and the outcome during the initial trial of this machine.
-{% include elements/figure.html image="\assets\img\1-3.jpg" caption= "Tile - Trial 1" %}
+{% include elements/figure.html image="/assets/img/1-3.jpg" caption= "Tile - Trial 1" %}
 
 <p>&nbsp;</p>
 #### Result Analysis
@@ -55,7 +55,7 @@ There were numerous difficulty faced and things didn’t go as planned.
 
 But overall the product came out was satisfactory.
 
-{% include elements/figure.html image="\assets\img\1-6.jpg" caption= "TILES"%}
+{% include elements/figure.html image="/assets/img/1-6.jpg" caption= "TILES"%}
 
 In the above picture, we used LDPE plastic which has melting temperature of 160C, this was collected
 from a used water tank and chopped into granules. The surface finish we got was quite good, but

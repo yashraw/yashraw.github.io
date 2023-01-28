@@ -18,7 +18,7 @@ author: Yash Rathod
 
 
 <br>
-<img src="\assets\img\blog-1-1.jpg"  style="width:400px;height:auto;">
+<img src="/assets/img/blog-1-1.jpg"  style="width:400px;height:auto;">
 <figcaption class="figure-caption text-center"> </figcaption>
 
 

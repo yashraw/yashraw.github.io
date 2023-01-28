@@ -13,7 +13,7 @@ So the promise I kept for 2021 is to read at least 2 books a month, inspired by 
 I'm like 35 pages down, which surprisingly took me about an hour to finish and now it's almost 1 am at night and my mind is hacking ways to distract me from reading, begging me to go to YouTube or just even to go sleep. So after a chapter ended, unconsciously I started reading a bookmark, now, If you have ever purchased a book from Amazon India, it comes with a bookmark like this
 
 <br>
-<img src="\assets\img\blog-2-1.jpg" style="width:400px;height:auto;">
+<img src="/assets/img/blog-2-1.jpg" style="width:400px;height:auto;">
 <figcaption class="figure-caption text-center"> Amazon's Awesome Bookmark! </figcaption>
 <br>
 

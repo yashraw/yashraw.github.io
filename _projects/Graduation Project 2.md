@@ -27,7 +27,7 @@ This Project was inspired by the current trend in automation in every sector, on
 - The parts used here are relatively inexpensive in terms of the value it provides, Total approximate cost we incur was less than ₹1500.
 
 The schematics of the project is shown below.
-{% include elements/figure.html image="\assets\img\2-1.png" caption="Schematics
+{% include elements/figure.html image="/assets/img/2-1.png" caption="Schematics
 " %}
 The brain is the Arduino microcontroller, It takes the moisture data provided by Soil Moisture Sensor and will give instruction to the Pump to turn On or Off, this turning was controlled by Relay, and depending on the pump a person is going to use, this relay needs to be changed according to its amperage rating.
 
