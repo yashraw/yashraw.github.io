@@ -28,7 +28,7 @@ permalink: /
 
 <br>
 
-#### Currently enrolled in Mechanical Engineering Technology - Industrial from [Centennial College](https://www.centennialcollege.ca/) and a mechanical designer | R&D Researcger working at [WIMTACH](https://wimtach.centennialcollege.ca/about/). I moved to Canada after working as a Jr. Design Engineer for a Pharma Equipment Manufacturing firm for almost a year. My goal now is to learn how to build machines and manage industry in an efficient way. 
+#### Currently enrolled in Mechanical Engineering Technology - Industrial from [Centennial College](https://www.centennialcollege.ca/) and a mechanical designer | R&D Researcher working at [WIMTACH](https://wimtach.centennialcollege.ca/about/). I moved to Canada after working as a Jr. Design Engineer for a Pharma Equipment Manufacturing firm for almost a year. My goal now is to learn how to build machines and manage industry in an efficient way. 
 
 
 <br>
@@ -37,7 +37,7 @@ permalink: /
 
 <br>
 
-#### Also enrolled in [A Hands-on Introduction to Engineering Simulations](https://www.edx.org/course/a-hands-on-introduction-to-engineering-simulations?index=product) — a hands-on fundamental course on CFD/Analysis with ANSYS at Cornell University by [Rajesh Bhaskaran](https://www.edx.org/bio/rajesh-bhaskaran)
+#### Also enrolled in [A Hands-on Introduction to Engineering Simulations](https://www.edx.org/course/a-hands-on-introduction-to-engineering-simulations?index=product) — a hands-on fundamental course on CFD/Analysis with ANSYS from Cornell University by [Rajesh Bhaskaran](https://www.edx.org/bio/rajesh-bhaskaran)
 
 <br>
 
