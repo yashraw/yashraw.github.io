@@ -43,6 +43,7 @@ Technology enthusiast Mechanical Engineer Graduate who is in love with Designing
 
 ## Training and Certifications
 -  CSWP - Certified SolidWorks Professional - Weldments - Sheet Metal - Dassault Systèmes <br>
+-  A Hands-on Introduction to Engineering Simulations from Cornell University <br>
 -  Additive Manufacturing for Business - LinkedIn Learning <br>
 -  SolidWorks - Simulation for Finite Element Analysis - LinkedIn Learning <br>
 -  Introduction to Programming using Python (Automate the Boring Stuff with Python) - Udemy <br>
