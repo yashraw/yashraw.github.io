@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /jhanavi
+permalink: /engg
 ---
 
 ### Hey There, You are Curious!!
