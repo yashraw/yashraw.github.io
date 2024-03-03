@@ -28,7 +28,7 @@ permalink: /
 
 <br>
 
-#### Recent grad from Mechanical Engineering Technology - Industrial from [Centennial College](https://www.centennialcollege.ca/) and a mechanical designer | R&D Researcher working at [WIMTACH](https://wimtach.centennialcollege.ca/about/). I moved to Canada after working as a Jr. Design Engineer for a Pharma Equipment Manufacturing firm for almost a year. My goal now is to learn how to build machines and manage industry in an efficient way. 
+#### Hello, I am **{{ site.author.name }}** 👋, a mechanical engineer graduate and a technology enthusiast. I completed the Mechanical Engineering Technology - Industrial program at [Centennial College](https://www.centennialcollege.ca/) and currently working as a Jr. Process Engineer for PowerCor, a [Linamar](https://www.linamar.com/) facility. In this role, I optimize the production processes and ensure quality standards by applying my skills and knowledge. I also have a passion for designing and photography and a person having a constant growth and learning mindset.
 
 
 <br>

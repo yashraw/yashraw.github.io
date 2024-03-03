@@ -8,8 +8,7 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-Technology enthusiast Mechanical Engineer Graduate who is in love with Designing, Rendering and Photography. Experienced in various 3D programs like SolidWorks and SolidEdge.I am keen to learn directly from seasoned industry professionals and currently enrolled in Mechanical Engineering Technology - Industrial program at [Centennial College](https://www.centennialcollege.ca/).
-
+Technology enthusiast Mechanical Engineer Graduate who is in love with Designing, Rendering and Photography. Experienced in various 3D programs like SolidWorks and SolidEdge.I am keen to learn directly from seasoned industry professionals and currently working as a Jr. Process Engineer for PowerCor, a [Linamar](https://www.linamar.com/) facility.
  You can checkout my projects [here.](../projects/)
 
 ***
