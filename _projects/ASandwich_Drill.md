@@ -19,6 +19,7 @@ https://youtu.be/ycKPtAkAFgk -> Embed this video!!
 -->
 
 The objective of this project was to design a sandwich drill jig that would securely clamp material in place while drilling precise and accurate holes, with minimal movement and deformation of the material during the drilling process.
+If you want to get the source files, reach out to contact@yashraw.me with subject - Sandwich Drill Jig.
 
 <p>&nbsp;</p>
 #### Objectives
