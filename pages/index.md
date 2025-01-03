@@ -11,7 +11,7 @@ permalink: /
 ***
 <meta name="google-site-verification" content="IINSoxxe5fQjr__boCzZ09iFnVUdbeZs6spQQtw3M1M" />
 
-# **Hey, I'm Yash**
+# **Hi, I'm Yash Rathod 👋**
 <div style="width: 140px; height: 4px;" class="green-divider"></div>
 <style>
 .green-divider {
@@ -24,12 +24,15 @@ permalink: /
 </style>
 
 
-#### Welcome to my internet home. I'm a Mechanical Engineer, passionate about technology, and someone who tries to capture the world in a frame :camera:. 
+#### Welcome to my online space. I'm a Mechanical Engineer, passionate about technology, and someone who tries to capture the world in a frame :camera:. 
 
 <br>
 
-#### Hello, I am **{{ site.author.name }}** 👋, a mechanical engineer graduate and a technology enthusiast. I completed the Mechanical Engineering Technology - Industrial program at [Centennial College](https://www.centennialcollege.ca/) and currently working as a Jr. Process Engineer for PowerCor, a [Linamar](https://www.linamar.com/) facility. In this role, I optimize the production processes and ensure quality standards by applying my skills and knowledge. I also have a passion for designing and photography and a person having a constant growth and learning mindset.
+#### I currently work as a Process Engineer at PowerCor, a [Linamar](https://www.linamar.com/) facility, where I optimize production process and ensure quality standards. I completed the Mechanical Engineering Technology - Industrial program at [Centennial College](https://www.centennialcollege.ca/). 
 
+<br>
+
+#### I’m also passionate about 3D printing, design, and photography, with a constant drive for growth and learning.
 
 <br>
 
