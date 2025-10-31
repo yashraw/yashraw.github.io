@@ -5,3 +5,7 @@ layout: default
 <div class="col-lg-10 mx-auto mt-5 post">
   {{ content }}
 </div>
+
+{% if page.css %}
+<link rel="stylesheet" href="{{ page.css }}">
+{% endif %}

@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 weight: 3
+
 ---
 
 # **About Me**
@@ -56,5 +57,42 @@ Technology enthusiast Mechanical Engineer Graduate who is in love with Designing
 - Self Hosting
 - Computer and Smartphone Enthusiast :computer:
 - Reading :book:
+
+---
+
+## Reach Me
+<br>
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xgepqwgy"
+  class="fs-form"
+  target="_top"
+  method="POST"
+>
+  <div class="fs-field">
+    <label class="fs-label" for="name">Your Name</label>
+    <input class="fs-input" id="name" name="name" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="email">Email</label>
+    <input class="fs-input" id="email" name="email" required />
+    <p class="fs-description">
+      This will help me respond to your query via an email.
+    </p>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="message">Message</label>
+    <textarea
+      class="fs-textarea"
+      id="message"
+      name="message"
+      required
+    ></textarea>
+    <p class="fs-description">What would you like to discuss?</p>
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Submit</button>
+  </div>
+</form>
 
 <!-- TRIAL CODE HERE  -->
