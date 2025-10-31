@@ -11,7 +11,11 @@ Hi I am **{{ site.author.name }}** :wave:,<br>
 Technology enthusiast Mechanical Engineer Graduate who is in love with Designing, Rendering and Photography. Experienced in various 3D programs like SolidWorks and SolidEdge.I am keen to learn directly from seasoned industry professionals and currently working as a Jr. Process Engineer for PowerCor, a [Linamar](https://www.linamar.com/) facility.
  You can checkout my projects [here.](../projects/)
 
-***
+
+
+<div class="row">
+{% include about/timeline.html %}
+</div>
 
 ## CAD Packages
 -   SolidWorks - CSWP
@@ -36,10 +40,6 @@ Technology enthusiast Mechanical Engineer Graduate who is in love with Designing
 
 ***
 
-<div class="row">
-{% include about/timeline.html %}
-</div>
-
 ## Training and Certifications
 -  CSWP - Certified SolidWorks Professional - Weldments - Sheet Metal - Dassault Systèmes <br>
 -  A Hands-on Introduction to Engineering Simulations from Cornell University <br>
@@ -49,8 +49,11 @@ Technology enthusiast Mechanical Engineer Graduate who is in love with Designing
 -  The Fundamentals of Digital Marketing - Google Digital Unlocked <br>
 
 
+
 ## Hobbies:
 - Photography, Cinematography :camera:
+- Networking
+- Self Hosting
 - Computer and Smartphone Enthusiast :computer:
 - Reading :book:
 
