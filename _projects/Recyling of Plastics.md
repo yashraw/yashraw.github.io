@@ -15,7 +15,7 @@ description: Recycling of Plastics Using Affordable Injection Moulding Machine M
 
 In present scenario, production, use and disposal of plastics and its products are increasing, which is harmful to society. This improper disposing of plastics has been a major concern since a long time. They tend to disrupt the environment in a very serious way. They break into the soil creating smaller plastic pieces and release toxic chemicals, eventually eaten by the animals and therefore harming them. Plastic creates a whole lot of damage to the earth and people, some of which includes wildlife harm, clogged sewage systems.
 
-We made an affordable Injection Moulding machine which will take recyclable plastics as raw material and will melt it depending upon the melting temperatur and will be injected out into a mould for the product to be made.
+We made an affordable Injection Moulding machine which will take recyclable plastics as raw material and will melt it depending upon the melting temperature and will be injected out into a mould for the product to be made.
 
 <p>&nbsp;</p>
 #### Objectives
@@ -39,21 +39,31 @@ Below is what we designed in *SolidWorks.*
 </div>
 
 
-Now we didn't made the entire machine exactly as the cad file because The plan was to built  with scrap parts, therefore we headed towards local scarpyards for scouting junk that would be usefull to us.
-We got most of the parts from there at reasonable cost, around Rs.55 per Kg. Rest of the materials were purchased new and some components like Band Heaters and Thermocouple were also purchased new.
+Now we didn't make the entire machine exactly as the cad file because The plan was to built  with scrap parts, therefore we headed towards local scarpyards for scouting junk that would be usefull to us.
+We got most of the parts from there at reasonable cost, around Rs.55($~1CAD) per Kg. Rest of the materials were purchased new and some components like Band Heaters and Thermocouple were also purchased new.
 {% include elements/figure.html image="/assets/img/1-2.png"  %}
 
 
-Now the whole heating element was controlled by the Arduino microcontroller, basically a desired and known melting temperature of the material to be inserted was inputted in the code and with the help of relay arrangement, the heating of the barrel was controlled, We only controlled the exit nozzle temperature and this can be improved by controlling the melting temperature first and increasing temperature right before ejecting out the nozzle to maintain optimal fluidity, but it was left aside for another revision.
+The heating system was controlled using an Arduino-based microcontroller platform. A predefined target melting temperature for the thermoplastic material was programmed into the firmware, and temperature regulation was achieved via a relay-driven on/off control loop. A thermocouple (or RTD sensor) interfaced with the microcontroller provided real-time temperature feedback.
+
+In the current configuration, only the nozzle (hot-end) temperature was actively monitored and regulated. The barrel or melt zone temperature was not independently controlled, resulting in suboptimal thermal consistency and potential premature solidification or excessive viscosity variation during extrusion.
+
+A more robust thermal management strategy would involve implementing a multi-zone heating system. This would include closed-loop control of the primary melting zone using PID (Proportional-Integral-Derivative) control algorithms to maintain the material at its optimal melting temperature, followed by a secondary controlled temperature increase at the nozzle to ensure proper melt fluidity and reduce backpressure during extrusion. This improvement was identified but deferred for future system revisions.
 {% include elements/figure.html image="/assets/img/1-4.png" caption="Schematics"  %}
 The exact code used for this project can be found [here.](https://github.com/yashraw/Codes/blob/main/Injection%20Moulding.ino) <br>
 
 <p>&nbsp;</p>
-#### Working
+#### Working Principle (Technical Description)
 
-Initially the waste plastic is collected and are chopped down into finer pieces, this is called granules. This granule is then fed into the hopper, this acts as a storage area, this are then transferred into the heating barrel which melts the plastic. The barrel is provided with band heaters. The molten plastic is fed into a mould using pressure provided with a hand-lever mechanism. The molten plastic takes shape of the mould and it is allowed to be cooled down. <br>
-The product formed may or may not require further machining depending upon the type of material used and/or the design of the mould. This post-process treatment can be anything from surface finishing, grinding, painting etc.
+The process begins with the collection of waste thermoplastic materials, which are mechanically shredded using a granulator into uniform particles known as plastic granules or feedstock. These granules are then introduced into a hopper that serves as the material storage and feeding unit. Gravity or a screw feeder mechanism directs the granules from the hopper into the heating barrel.
 
+The barrel is equipped with electric band heaters arranged in multiple heating zones to ensure gradual and uniform melting of the polymer. A thermocouple or RTD sensor continuously monitors the barrel temperature, which is regulated using an Arduino-based control system, typically employing PID (Proportional-Integral-Derivative) or relay-based on/off control. The plastic transitions from a solid to a viscoelastic molten state as it moves through the heated barrel. In advanced systems, a rotating screw would provide shear heating and material conveyance, but in this setup, the plastic melt is manually transferred.
+
+Once sufficient melt is accumulated, pressure is manually applied using a hand-operated lever mechanism, functioning similarly to a plunger-type injection system. This pressure forces the molten plastic into the mold cavity through the nozzle and sprue channel. The mold, typically made of aluminum or mild steel, defines the final geometry of the part and may be fitted with cooling channels or fins to facilitate controlled solidification.
+
+After the molten plastic fills the mold, it is allowed to cool and solidify under ambient or forced cooling conditions. The molded component is then ejected.
+
+Depending on the material properties, mold surface quality, and dimensional tolerances required, the part may undergo post-processing. This may include flash removal, CNC machining, drilling, surface finishing (sanding or grinding), painting, or coating to enhance aesthetics and functionality.
 
 
 Below is the result of the first mould created and the outcome during the initial trial of this machine.
