@@ -1,5 +1,5 @@
-$primary:   #007bff;
-$secondary: #6c757d;
+$primary:   #58a6ff;   // blueprint blue, replaces bootstrap blue
+$secondary: #8b949e;
 $success:   #28a745;
 $info:      #17a2b8;
 $warning:   #ffc107;
@@ -8,3 +8,13 @@ $light:     #f8f9fa;
 $dark:      #343a40;
 
 $rounded-borders: 15px;
+
+// Dark theme palette
+$dark-bg:        #0d1117;   // page background
+$dark-bg-alt:    #161b22;   // cards, code blocks, nav
+$dark-border:    #30363d;
+$text-body:      #c9d1d9;
+$text-heading:   #e6edf3;
+$text-muted-dark:#8b949e;
+$accent-blue:      #58a6ff;
+$accent-blue-light:#79c0ff;

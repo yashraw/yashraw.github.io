@@ -4,6 +4,7 @@ tools: [SolidWorks, ArduinoIDE, Designing, Automation]
 image: https://www.rts.com/wp-content/uploads/2020/10/shutterstock_1345281257_opt.jpg
 description: Recycling of Plastics Using Affordable Injection Moulding Machine Made in-house.
 #external_url: https://www.google.com
+category: manufacturing
 ---
 
 
