@@ -1,0 +1,49 @@
+{%- assign manufacturing_projects = site.projects | where: "category", "manufacturing" -%}
+
+{%- if manufacturing_projects.size > 0 -%}
+<div id="manufacturingCarousel" class="carousel slide manufacturing-carousel" data-ride="carousel" data-interval="5000">
+
+  <div class="carousel-inner">
+    {% for project in manufacturing_projects %}
+      {%- if project.external_url -%}
+        {%- assign project_url = project.external_url -%}
+      {%- else -%}
+        {%- assign project_url = project.url | relative_url -%}
+      {%- endif -%}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="manufacturing-slide-media">
+          <img src="{{ project.image }}" class="d-block w-100 manufacturing-slide-img" alt="{{ project.name }}">
+        </div>
+        <a href="{{ project_url }}" class="manufacturing-slide-caption-link">
+          <div class="manufacturing-slide-caption">
+            <h5>{{ project.name }}</h5>
+            <p>{{ project.description }}</p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <ol class="carousel-indicators manufacturing-indicators">
+    {% for project in manufacturing_projects %}
+      <li data-target="#manufacturingCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+    {% endfor %}
+  </ol>
+
+  {% if manufacturing_projects.size > 1 %}
+  <a class="carousel-control-prev" href="#manufacturingCarousel" role="button" data-slide="prev">
+    <span class="manufacturing-control-btn"><i class="fas fa-chevron-left"></i></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#manufacturingCarousel" role="button" data-slide="next">
+    <span class="manufacturing-control-btn"><i class="fas fa-chevron-right"></i></span>
+    <span class="sr-only">Next</span>
+  </a>
+  {% endif %}
+
+</div>
+
+<div class="text-center mt-3">
+  <a href="{{ '/projects/' | relative_url }}" class="btn btn-see-all">See All Projects</a>
+</div>
+{%- endif -%}
