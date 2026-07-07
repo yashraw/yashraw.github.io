@@ -9,7 +9,11 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-Technology enthusiast Mechanical Engineer Graduate who is in love with Designing, Rendering and Photography. Experienced in various 3D programs like SolidWorks and SolidEdge.I am keen to learn directly from seasoned industry professionals and currently working as a Jr. Process Engineer for PowerCor, a [Linamar](https://www.linamar.com/) facility.
+
+Four years in automotive manufacturing taught me that the hard part is rarely the engineering - it's keeping suppliers, production, and OEE Projects timelines aligned without anything slipping through the cracks.
+
+I bring the same instinct home, running a Proxmox and OPNsense homelab where I'm constantly the one making disparate systems talk to each other. That's the muscle I'm building toward formally with a PMP, as I move into Technical Project Management.
+
  You can checkout my projects [here.](../projects/)
 
 
