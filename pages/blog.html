@@ -1,9 +1,110 @@
 ---
 layout: default
 title: Blog
-weight: 2
 permalink: /blog/
 ---
 
-{% include blog/search.html %}
-{% include blog/index.html %}
+<div class="minimal-blog-wrapper">
+  
+  <!-- Content Header Area -->
+  <header class="blog-header-section">
+    <h1 class="blog-main-title">Blog</h1>
+    <p class="blog-subtitle">Thoughts, tutorials, and updates on tech, home lab, and building in public.</p>
+  </header>
+
+  <!-- Search Bar Option -->
+  <div class="blog-search-container">
+    <input type="text" id="search-input" placeholder="Search posts by title or description..." aria-label="Search posts">
+  </div>
+
+  <hr class="header-divider">
+
+  <!-- Streamlined Row List -->
+  <ul class="minimal-post-feed" id="search-results">
+    {% assign posts = paginator.posts | default: site.posts %}
+    {% for post in posts %}
+    <!-- Data attributes allow vanilla JS to filter these items without any plugins -->
+    <li class="minimal-post-row" 
+        data-title="{{ post.title | downcase | escape }}" 
+        data-desc="{{ post.description | downcase | escape }}">
+      
+      <!-- Left: Date Stamp -->
+      <div class="mp-date-col">
+        {{ post.date | date: "%b %d, %Y" }}
+      </div>
+      
+      <!-- Center: Title & Front-Matter Description -->
+      <div class="mp-content-col">
+        <h2 class="mp-post-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p class="mp-post-excerpt">
+          {{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}
+        </p>
+      </div>
+      
+      <!-- Right: Action Link (Cleaned up) -->
+      <div class="mp-action-col">
+        <a href="{{ post.url | relative_url }}" class="mp-read-link">Read more &rarr;</a>
+      </div>
+      
+    </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Bottom Nav Pagination -->
+  {% if paginator.total_pages > 1 %}
+  <nav class="minimal-pagination-footer" id="blog-pagination-nav">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="nav-arrow">&larr; Newer</a>
+    {% else %}
+      <span class="nav-arrow disabled-text">&larr; Newer</span>
+    {% endif %}
+
+    <div class="page-numbers-list">
+      <span class="active-page-num">{{ paginator.page }}</span>
+      <span class="total-pages-count">of {{ paginator.total_pages }}</span>
+    </div>
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="nav-arrow">Older &rarr;</a>
+    {% else %}
+      <span class="nav-arrow disabled-text">Older &rarr;</span>
+    {% endif %}
+  </nav>
+  {% endif %}
+
+</div>
+
+<!-- Real-time Filter Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const postRows = document.querySelectorAll(".minimal-post-row");
+    const paginationNav = document.getElementById("blog-pagination-nav");
+
+    searchInput.addEventListener("input", function (e) {
+      const searchTerm = e.target.value.toLowerCase().trim();
+
+      postRows.forEach(row => {
+        const title = row.getAttribute("data-title");
+        const desc = row.getAttribute("data-desc");
+
+        if (title.includes(searchTerm) || desc.includes(searchTerm)) {
+          row.style.display = "grid"; // Show match
+        } else {
+          row.style.display = "none";  // Hide non-match
+        }
+      });
+
+      // Hide the pagination menu during an active search filter to avoid UI conflicts
+      if (paginationNav) {
+        if (searchTerm.length > 0) {
+          paginationNav.style.display = "none";
+        } else {
+          paginationNav.style.display = "flex";
+        }
+      }
+    });
+  });
+</script>

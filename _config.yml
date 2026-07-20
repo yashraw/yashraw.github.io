@@ -13,6 +13,7 @@ url: "https://yashraw.me"
 ### Plugins ###
 plugins:
   - jemoji
+  - jekyll-paginate
 
 
 ### Navbar Settings ###
@@ -105,4 +106,5 @@ exclude:
   - LICENSE
   - "*.log"
 
-  
+paginate: 5
+paginate_path: "/blog/page:num/"  

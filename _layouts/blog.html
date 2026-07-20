@@ -1,0 +1,77 @@
+---
+layout: default
+---
+{% assign posts = paginator.posts | default: site.posts %}
+{% assign total_pages = paginator.total_pages | default: 1 %}
+{% assign current_page = paginator.page | default: 1 %}
+
+<section class="blog">
+
+  <header class="blog-header">
+    <h1 class="blog-title">{{ page.title | default: "Blog" }}</h1>
+  </header>
+
+  <div class="blog-list" role="list">
+    {% for post in posts %}
+      <article class="blog-post" role="listitem">
+        <div class="blog-post-grid">
+          <!-- Left: Date -->
+          <div class="blog-date">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%Y-%m-%d" }}
+            </time>
+          </div>
+
+          <!-- Center: Title + Excerpt -->
+          <div class="blog-main">
+            <h2 class="blog-post-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+
+            {% if post.excerpt and post.excerpt != "" %}
+              <p class="blog-excerpt">
+                {{ post.excerpt | strip_html | strip_newlines }}
+              </p>
+            {% else %}
+              <p class="blog-excerpt blog-excerpt--fallback">
+                {{ post.content | strip_html | strip_newlines | truncate: 180 }}
+              </p>
+            {% endif %}
+          </div>
+
+          <!-- Right: Read more link -->
+          <div class="blog-more">
+            <a class="blog-readmore" href="{{ post.url | relative_url }}">
+              Read more -y
+            </a>
+          </div>
+        </div>
+      </article>
+
+      {% unless forloop.last %}
+        <div class="blog-divider" aria-hidden="true"></div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+
+  <!-- Pagination -->
+  <nav class="blog-pagination" aria-label="Pagination">
+    <div class="blog-pagination-inner">
+      {% if paginator %}
+        {% if paginator.previous_page %}
+          <a class="blog-page-link" href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer</a>
+        {% endif %}
+
+        <span class="blog-page-status">
+          Page {{ current_page }} of {{ total_pages }}
+        </span>
+
+        {% if paginator.next_page %}
+          <a class="blog-page-link" href="{{ paginator.next_page_path | relative_url }}">Older &rarr;</a>
+        {% endif %}
+      {% else %}
+        <!-- If pagination isn’t configured, show nothing -->
+      {% endif %}
+    </div>
+  </nav>
+</section>
