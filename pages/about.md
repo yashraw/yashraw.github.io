@@ -12,7 +12,7 @@ Hi I am **{{ site.author.name }}** :wave:,<br>
 
 Four years in automotive manufacturing taught me that the hard part is rarely the engineering - it's keeping suppliers, production, and OEE Projects timelines aligned without anything slipping through the cracks.
 
-I bring the same instinct home, running a Proxmox and OPNsense homelab where I'm constantly the one making disparate systems talk to each other. That's the muscle I'm building toward formally with a PMP, as I move into Technical Project Management.
+I bring the same instinct home, running a Proxmox and OPNsense homelab where I'm constantly the one making disparate systems talk to each other. That's the muscle I'm building toward formally with a PMP certification.
 
  You can checkout my projects [here.](../projects/)
 
