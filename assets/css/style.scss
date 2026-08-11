@@ -338,6 +338,22 @@ footer, #attribution, #attribution a {
   }
 }
 
+@media (max-width: 767px) {
+  .projects-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .projects-layout .projects-section-manufacturing { order: 1; }
+  .projects-layout .projects-section-homelab { order: 2; }
+
+  .projects-layout .projects-section-manufacturing .project-grid,
+  .projects-layout .projects-section-homelab .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Homepage-only composition fixes. */
 .home-page .home-feature {
   flex-direction: column;
@@ -580,6 +596,41 @@ footer, #attribution, #attribution a {
   }
 }
 
+/* Project page mobile layout: one readable column, intentional category order. */
+@media (max-width: 900px) {
+  .projects-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .projects-layout .projects-section {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+
+  .projects-layout .projects-section-manufacturing {
+    order: 1;
+  }
+
+  .projects-layout .projects-section-homelab {
+    order: 2;
+  }
+
+  .projects-layout .projects-section-manufacturing .project-grid,
+  .projects-layout .projects-section-homelab .project-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .projects-layout .project-card-shell,
+  .projects-layout .project-card {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
 .project-card[aria-busy="true"] {
   opacity: 0.65;
   pointer-events: none;
@@ -591,7 +642,7 @@ footer, #attribution, #attribution a {
   }
 }
 
-@media (min-width: 481px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 900px) {
   .projects-layout {
     grid-template-columns: 1fr;
     gap: 0.5rem;
