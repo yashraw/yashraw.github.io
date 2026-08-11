@@ -1,12 +1,11 @@
 ---
 title: Logging RAV4 mileage
-tags: selfhosting
+tags: selfhosting home-assistant toyota automation
 style: fill
 color: dark
 description: Logging RAV4 mileage to Google Sheets with Home Assistant
 date: 2026-06-15
 author: Yash Rathod
-tags: [home-assistant, toyota, automation]
 ---
 
 My 2025 RAV4 Hybrid is integrated into Home Assistant through the `ha-toyota-na` custom integration. One of the sensors it exposes is `sensor.rav4_daily_km` — the odometer delta for the day. For the past few months I'd been logging that to a local CSV file using a shell command triggered by a nightly automation.

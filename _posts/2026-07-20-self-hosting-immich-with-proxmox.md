@@ -1,12 +1,11 @@
 ---
 title: Self Hosting Immich with Proxmox and ZFS
-tags: selfhosting
+tags: selfhosting immich proxmox
 style: fill
 color: dark
 description: Immich is a goolge photos alternative that is installed locally(self hosted) on your machine.
 date: 2026-06-20
 author: Yash Rathod
-tags: [immich, selfhosted, proxmox]
 ---
 
 # Self Hosting Immich with Proxmox and ZFS
