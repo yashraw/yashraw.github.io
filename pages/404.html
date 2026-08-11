@@ -1,6 +1,11 @@
 ---
-layout: null
+layout: default
 permalink: /404.html
 ---
 
-{% include 404.html %}
+<section class="empty-state" aria-labelledby="not-found-title">
+  <p class="section-eyebrow">404</p>
+  <h1 id="not-found-title">This page took a wrong turn.</h1>
+  <p>The page you are looking for does not exist or may have moved.</p>
+  <a class="btn btn-primary" href="{{ '/' | relative_url }}">Return home</a>
+</section>

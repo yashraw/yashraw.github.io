@@ -1,21 +1,26 @@
-<div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ project_url }}" class="project card">
+<article class="wow animated fadeIn project-card-shell" data-wow-delay=".15s">
+  <a href="{{ project_url }}" class="project card project-card" aria-labelledby="{{ project_id }}-name">
     {%- if project_img -%}
-    <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
+    <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="" loading="lazy" decoding="async" />
     {%- endif -%}
     <div class="card-body">
-      <h5 id="{{ project_id }}-name" class="card-title">
+      <div class="project-card-heading">
+        <h5 id="{{ project_id }}-name" class="card-title">
           {%- if project_type == "remote" -%}
-          <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
+          <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub repository: </span>
           {%- endif -%}
-        {{ project_name }}
-      </h5>
+          {{ project_name }}
+        </h5>
+        {%- if project.date -%}
+        <time class="project-card-date" datetime="{{ project.date | date: '%Y-%m-%d' }}">{{ project.date | date: "%b %Y" }}</time>
+        {%- endif -%}
+      </div>
       <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
-      <p id="{{ project_id }}-tools" class="card-text">
+      <ul id="{{ project_id }}-tools" class="project-card-tools" aria-label="Tools used">
         {%- for tool in project_tools -%}
-        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
+        <li class="badge badge-pill">{{ tool }}</li>
         {%- endfor -%}
-      </p>
+      </ul>
     </div>
   </a>
-</div>
+</article>

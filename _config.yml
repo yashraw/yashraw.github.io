@@ -15,6 +15,11 @@ plugins:
   - jemoji
   - jekyll-paginate
 
+### Sass Settings ###
+sass:
+  sass_dir: _sass
+  style: compressed
+
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar

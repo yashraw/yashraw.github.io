@@ -1,10 +1,10 @@
-{%- assign manufacturing_projects = site.projects | where: "category", "manufacturing" -%}
+{%- assign featured_projects = site.projects | sort: "date" | reverse -%}
 
-{%- if manufacturing_projects.size > 0 -%}
-<div id="manufacturingCarousel" class="carousel slide manufacturing-carousel" data-ride="carousel" data-interval="5000">
+{%- if featured_projects.size > 0 -%}
+<div id="featuredProjectsCarousel" class="carousel slide manufacturing-carousel" data-ride="carousel" data-interval="5000" aria-label="Featured projects">
 
   <div class="carousel-inner">
-    {% for project in manufacturing_projects %}
+    {% for project in featured_projects limit: 4 %}
       {%- if project.external_url -%}
         {%- assign project_url = project.external_url -%}
       {%- else -%}
@@ -12,10 +12,11 @@
       {%- endif -%}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
         <div class="manufacturing-slide-media">
-          <img src="{{ project.image }}" class="d-block w-100 manufacturing-slide-img" alt="{{ project.name }}">
+          <img src="{{ project.image }}" class="d-block w-100 manufacturing-slide-img" alt="" loading="lazy" decoding="async">
         </div>
         <a href="{{ project_url }}" class="manufacturing-slide-caption-link">
           <div class="manufacturing-slide-caption">
+            <p class="home-project-category">{{ project.category | capitalize }}</p>
             <h5>{{ project.name }}</h5>
             <p>{{ project.description }}</p>
           </div>
@@ -24,19 +25,19 @@
     {% endfor %}
   </div>
 
-  <ol class="carousel-indicators manufacturing-indicators">
-    {% for project in manufacturing_projects %}
-      <li data-target="#manufacturingCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+  <div class="carousel-indicators manufacturing-indicators">
+    {% for project in featured_projects limit: 4 %}
+      <button type="button" data-target="#featuredProjectsCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}" aria-label="Show project {{ forloop.index }}"></button>
     {% endfor %}
-  </ol>
+  </div>
 
-  {% if manufacturing_projects.size > 1 %}
-  <a class="carousel-control-prev" href="#manufacturingCarousel" role="button" data-slide="prev">
-    <span class="manufacturing-control-btn"><i class="fas fa-chevron-left"></i></span>
+  {% if featured_projects.size > 1 %}
+  <a class="carousel-control-prev" href="#featuredProjectsCarousel" role="button" data-slide="prev">
+    <span class="manufacturing-control-btn"><i class="fas fa-chevron-left" aria-hidden="true"></i></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#manufacturingCarousel" role="button" data-slide="next">
-    <span class="manufacturing-control-btn"><i class="fas fa-chevron-right"></i></span>
+  <a class="carousel-control-next" href="#featuredProjectsCarousel" role="button" data-slide="next">
+    <span class="manufacturing-control-btn"><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
     <span class="sr-only">Next</span>
   </a>
   {% endif %}

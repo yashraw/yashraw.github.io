@@ -5,9 +5,11 @@
 
 {% include head.html %}
 
-<body class="d-flex flex-column h-100">
+<body class="site-shell d-flex flex-column h-100">
 
-  <main class="flex-shrink-0 container mt-5">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <main id="main-content" class="site-main flex-shrink-0 container">
   {% include navbar.html %}
   {{ content }}
   </main>

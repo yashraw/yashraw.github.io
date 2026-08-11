@@ -18,3 +18,26 @@ $text-heading:   #e6edf3;
 $text-muted-dark:#8b949e;
 $accent-blue:      #58a6ff;
 $accent-blue-light:#79c0ff;
+
+// Semantic design tokens shared by the site UI.
+:root {
+  --color-surface: #{$dark-bg};
+  --color-surface-raised: #{$dark-bg-alt};
+  --color-border: #{$dark-border};
+  --color-text: #{$text-body};
+  --color-heading: #{$text-heading};
+  --color-muted: #{$text-muted-dark};
+  --color-accent: #{$accent-blue};
+  --color-accent-hover: #{$accent-blue-light};
+  --color-on-accent: #0d1117;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.9375rem;
+  --shadow-card: 0 0.75rem 2.5rem rgba(0, 0, 0, 0.24);
+  --focus-ring: 0 0 0 3px rgba(88, 166, 255, 0.35);
+}

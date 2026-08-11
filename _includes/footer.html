@@ -1,8 +1,10 @@
-<footer class="mt-auto py-3 text-center">
+<footer class="site-footer mt-auto text-center">
 
-  <a href="{{ '/assets/files/resume.pdf' | relative_url }}" class="btn btn-resume mb-3" target="_blank" rel="noopener">
-    <i class="fas fa-paperclip"></i> Resume
-  </a>
+  <div class="footer-actions">
+    <a href="{{ '/assets/files/resume.pdf' | relative_url }}" class="btn btn-resume" target="_blank" rel="noopener">
+      <i class="fas fa-paperclip" aria-hidden="true"></i> Resume
+    </a>
+  </div>
 
   {% include social.html %}
 

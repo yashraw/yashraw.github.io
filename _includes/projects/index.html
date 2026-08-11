@@ -1,53 +1,59 @@
 <!-- Remote Projects JS -->
 <script src="{{ '/assets/js/remote-projects.js' | relative_url }}"></script>
 
-{%- assign manufacturing_projects = site.projects | where: "category", "manufacturing" -%}
-{%- assign homelab_projects = site.projects | where: "category", "homelab" -%}
+{%- comment -%}
+  Project dates are stored in each project's front matter. Sorting after
+  filtering keeps each category chronological while keeping new work on top.
+{%- endcomment -%}
+{%- assign manufacturing_projects = site.projects | where: "category", "manufacturing" | sort: "date" | reverse -%}
+{%- assign homelab_projects = site.projects | where: "category", "homelab" | sort: "date" | reverse -%}
 {%- assign uncategorized = site.projects | where_exp: "p", "p.category == nil" -%}
 
-{%- if manufacturing_projects.size > 0 -%}
-<section class="projects-section">
-  <h3 class="projects-section-title">Manufacturing &amp; Process Engineering</h3>
-  <div class="project-grid">
-    {% for project in manufacturing_projects %}
-      {%- assign project_type  = "local" -%}
-      {%- assign project_id    = project.name | slugify -%}
-      {%- assign project_img   = project.image -%}
-      {%- assign project_name  = project.name -%}
-      {%- assign project_desc  = project.description -%}
-      {%- assign project_tools = project.tools -%}
-      {%- if project.external_url -%}
-        {%- assign project_url = project.external_url -%}
-      {%- else -%}
-        {%- assign project_url = project.url | relative_url -%}
-      {%- endif -%}
-      {% include projects/project-card.html %}
-    {% endfor %}
-  </div>
-</section>
-{%- endif -%}
+<div class="projects-layout">
+  {%- if manufacturing_projects.size > 0 -%}
+  <section class="projects-section projects-section-manufacturing" aria-labelledby="manufacturing-projects-title">
+    <h3 id="manufacturing-projects-title" class="projects-section-title">Manufacturing &amp; Process Engineering</h3>
+    <div class="project-grid">
+      {% for project in manufacturing_projects %}
+        {%- assign project_type  = "local" -%}
+        {%- assign project_id    = project.name | slugify -%}
+        {%- assign project_img   = project.image -%}
+        {%- assign project_name  = project.name -%}
+        {%- assign project_desc  = project.description -%}
+        {%- assign project_tools = project.tools -%}
+        {%- if project.external_url -%}
+          {%- assign project_url = project.external_url -%}
+        {%- else -%}
+          {%- assign project_url = project.url | relative_url -%}
+        {%- endif -%}
+        {% include projects/project-card.html %}
+      {% endfor %}
+    </div>
+  </section>
+  {%- endif -%}
 
-{%- if homelab_projects.size > 0 -%}
-<section class="projects-section">
-  <h3 class="projects-section-title">Homelab &amp; Infrastructure</h3>
-  <div class="project-grid">
-    {% for project in homelab_projects %}
-      {%- assign project_type  = "local" -%}
-      {%- assign project_id    = project.name | slugify -%}
-      {%- assign project_img   = project.image -%}
-      {%- assign project_name  = project.name -%}
-      {%- assign project_desc  = project.description -%}
-      {%- assign project_tools = project.tools -%}
-      {%- if project.external_url -%}
-        {%- assign project_url = project.external_url -%}
-      {%- else -%}
-        {%- assign project_url = project.url | relative_url -%}
-      {%- endif -%}
-      {% include projects/project-card.html %}
-    {% endfor %}
-  </div>
-</section>
-{%- endif -%}
+  {%- if homelab_projects.size > 0 -%}
+  <section class="projects-section projects-section-homelab" aria-labelledby="homelab-projects-title">
+    <h3 id="homelab-projects-title" class="projects-section-title">Homelab &amp; Infrastructure</h3>
+    <div class="project-grid">
+      {% for project in homelab_projects %}
+        {%- assign project_type  = "local" -%}
+        {%- assign project_id    = project.name | slugify -%}
+        {%- assign project_img   = project.image -%}
+        {%- assign project_name  = project.name -%}
+        {%- assign project_desc  = project.description -%}
+        {%- assign project_tools = project.tools -%}
+        {%- if project.external_url -%}
+          {%- assign project_url = project.external_url -%}
+        {%- else -%}
+          {%- assign project_url = project.url | relative_url -%}
+        {%- endif -%}
+        {% include projects/project-card.html %}
+      {% endfor %}
+    </div>
+  </section>
+  {%- endif -%}
+</div>
 
 {%- if page.remote_projects.size > 0 -%}
 <section class="projects-section">
